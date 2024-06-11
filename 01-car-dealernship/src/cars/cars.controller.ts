@@ -8,11 +8,15 @@ import {
   Patch,
   Post,
   Query,
+  UsePipes,
+  ValidationPipe,
 } from '@nestjs/common';
 import { CarsService } from './cars.service';
-import { CreateCartDto, ListAllEntities } from './dto/cars.dto';
+import { ListAllEntities } from './dto/cars.dto';
+import { CreateCarDto } from './dto/create-car.dto';
 
 @Controller('cars')
+@UsePipes(ValidationPipe)
 export class CarsController {
   constructor(private readonly carsService: CarsService) {}
   @Get()
@@ -26,8 +30,8 @@ export class CarsController {
   }
 
   @Post()
-  create(@Body() body: CreateCartDto) {
-    return this.carsService.save(body);
+  create(@Body() createCarDto: CreateCarDto) {
+    return this.carsService.save(createCarDto);
   }
 
   @Patch(':id')

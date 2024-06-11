@@ -1,9 +1,6 @@
-export class CreateCartDto {
-  brand: string;
-  year: number;
-}
+import { CreateCarDto } from './create-car.dto';
 
-export class UpdateCarDto extends CreateCartDto {
+export class UpdateCarDto extends CreateCarDto {
   id: number;
 }
 export class DeleteCarDto {
