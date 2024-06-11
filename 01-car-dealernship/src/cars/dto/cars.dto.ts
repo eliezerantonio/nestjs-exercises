@@ -1,8 +1,7 @@
 import { CreateCarDto } from './create-car.dto';
+import { UpdateCarDto } from './update-car.dto';
 
-export class UpdateCarDto extends CreateCarDto {
-  id: number;
-}
+
 export class DeleteCarDto {
   id: number;
 }
