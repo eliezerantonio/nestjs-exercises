@@ -64,4 +64,8 @@ export class CarsService {
       message: 'Eliminado com sucesso',
     };
   }
+
+  fillCarsWithSeedData(cars: Car[]) {
+    this.cars = cars;
+  }
 }
