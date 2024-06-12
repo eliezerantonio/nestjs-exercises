@@ -1,6 +1,8 @@
 {
     "conventionalCommits.scopes": [
         "brands",
-        "seed"
+        "seed",
+        "docker",
+        "package.json"
     ]
 }
