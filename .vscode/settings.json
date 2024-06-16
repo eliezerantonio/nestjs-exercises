@@ -3,6 +3,7 @@
         "brands",
         "seed",
         "docker",
-        "package.json"
+        "package.json",
+        "teslo-app"
     ]
 }

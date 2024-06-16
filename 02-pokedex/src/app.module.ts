@@ -8,7 +8,6 @@ import { SeedModule } from './seed/seed.module';
 import { ConfigModule } from '@nestjs/config';
 import { EnvConfiguration } from './config/env.config';
 
-
 @Module({
   imports: [
     ConfigModule.forRoot({
