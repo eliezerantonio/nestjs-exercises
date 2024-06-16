@@ -8,6 +8,7 @@ import { SeedModule } from './seed/seed.module';
 import { ConfigModule } from '@nestjs/config';
 import { EnvConfiguration } from './config/env.config';
 
+
 @Module({
   imports: [
     ConfigModule.forRoot({
@@ -19,7 +20,9 @@ import { EnvConfiguration } from './config/env.config';
 
     MongooseModule.forRoot(process.env.MONGODB),
     PokemonModule,
+
     SeedModule,
+
     CommonModule,
   ],
   controllers: [],
