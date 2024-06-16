@@ -14,7 +14,7 @@ yarn install
 3. Have Nest CLI installed
 
 ```
-npm i -g @nestjs/cli
+npm i -g @nestjs/cli 
 ```
 
 4. Up DataBase
