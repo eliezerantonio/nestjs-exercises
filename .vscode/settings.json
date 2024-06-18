@@ -4,6 +4,7 @@
         "seed",
         "docker",
         "package.json",
-        "teslo-app"
+        "teslo-app",
+        "products"
     ]
 }
