@@ -15,7 +15,6 @@ export class CreateProductDto {
   title: string;
 
   @IsNumber()
-  @IsPositive()
   @IsOptional()
   price?: number;
 
