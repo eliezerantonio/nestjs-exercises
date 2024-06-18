@@ -75,7 +75,11 @@ export class ProductsService {
 
     if (!product) throw new NotFoundException(`Product with ${id} not found`);
 
-    return await this.productRepository.save(product);
+    try {
+      return await this.productRepository.save(product);
+    } catch (error) {
+      this.handleDbException(error);
+    }
   }
 
   async remove(id: string) {
