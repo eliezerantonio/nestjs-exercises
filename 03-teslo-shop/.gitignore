@@ -5,6 +5,7 @@
 postgres/
 .env
 .vscode
+public/
 # Logs
 logs
 *.log
