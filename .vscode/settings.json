@@ -1,5 +1,24 @@
 {
       "conventionalCommits.scopes": [
             "auth"
-      ]
+      ],
+      "material-icon-theme.activeIconPack": "nest",
+      "material-icon-theme.files.associations": {
+       
+
+      },
+      "material-icon-theme.folders.associations": {
+        "infrastructure":  "Cluster",
+        "infra":  "Cluster",
+        "stripe":  "Resource",
+        "guards":"Guard",
+        "files":"Resource",
+        "data":"Database",
+        "datasource":"Database",
+        "entities":"Other",
+        "strategies":"Other",
+        "configs":"Settings",
+
+      
+      }
 }
